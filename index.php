@@ -2,7 +2,7 @@
     include("conexion.php");
     $con=conectar();
 
-    $sql="SELECT * FROM clientes";
+    $sql="SELECT * FROM clientes order by id_cliente desc";
     $query=mysqli_query($con,$sql);
 ?>
 <!DOCTYPE html>
